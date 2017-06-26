@@ -1,0 +1,59 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.0'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    // Sdk and tools
+    minSdkVersion = 19
+    targetSdkVersion = 25
+    compileSdkVersion = 25
+    buildToolsVersion = '25.0.2'
+
+    // App dependencies
+    supportLibraryVersion = '25.3.1'
+    permission = '1.0.4'
+    rxdownload2 = '2.0.0-beta4'
+    flowlayout = '1.0.3'
+    baservadapter = '3.0.3'
+    baseadapter = '3.0.3'
+    MagicIndicator = '1.4.0'
+    actionsheet = '1.1.7'
+    materialratingbar = '1.0.2'
+    richtext = '2.3.7'
+    glideimagegetter = '1.0.1'
+    switchbutton = '1.4.5'
+    materialdialogs = '0.9.4.2'
+    BaseRecyclerViewAdapterHelper = '2.9.18'
+    FlycoDialog = '1.3.2@aar'
+    fancybuttons = '1.8.3'
+    circleimageview = '2.1.0'
+    divideritemdecoration = '2.0'
+    materialedittext = '2.1.4'
+    ucrop = '2.2.1'
+    popmenu = '1.1.0'
+    WheelPicker = '1.5.2'
+    banner = '1.4.9'
+
+}

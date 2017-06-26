@@ -1,0 +1,126 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+group = 'com.github.coolhades'  //替换成你的 Github 的用户名
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+
+    //support 25.0.1
+    compile('com.yanzhenjie:permission:1.0.4') {
+        exclude group: 'com.android.support'
+    }
+    compile('zlc.season:rxdownload2:2.0.0-beta4') {
+        exclude group: 'com.android.support'
+    }
+    compile('com.zhy:flowlayout-lib:1.0.3') {
+        exclude group: 'com.android.support'
+    }
+    compile('com.ashokvarma.android:bottom-navigation-bar:2.0.0') {
+        exclude group: 'com.android.support'
+    }
+    compile('com.zhy:base-rvadapter:3.0.3') {
+        exclude group: 'com.android.support'
+    }
+    compile('com.zhy:base-adapter:3.0.3') {
+        exclude group: 'com.android.support'
+    }
+    compile('com.github.hackware1993:MagicIndicator:1.4.0') {
+        exclude group: 'com.android.support'
+    }
+    compile('com.baoyz.actionsheet:library:1.1.7') {
+        exclude group: 'com.android.support'
+    }
+    compile('me.zhanghai.android.materialratingbar:library:1.0.2') {
+        exclude group: 'com.android.support'
+    }
+
+    compile('com.zzhoujay.richtext:richtext:2.3.7') {
+        exclude group: 'com.android.support'
+    }
+    compile 'com.zzhoujay.glideimagegetter:glideimagegetter:1.0.1'
+    compile('com.kyleduo.switchbutton:library:1.4.5') {
+        exclude group: 'com.android.support'
+    }
+    compile('com.afollestad.material-dialogs:core:0.9.4.2') {
+        exclude group: 'com.android.support'
+    }
+    //封装的adapter
+    compile('com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.18') {
+        exclude group: 'com.android.support'
+    }
+    compile 'com.flyco.dialog:FlycoDialog_Lib:1.3.2@aar'
+    compile 'com.github.medyo:fancybuttons:1.8.3'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'in.srain.cube:ultra-ptr:1.0.11'
+    compile('com.yanyusong.y_divideritemdecoration:y_divideritemdecoration:1.0') {
+        exclude group: 'com.android.support'
+    }
+    compile 'com.bigkoo:pickerview:2.1.1'
+    compile 'com.allenliu.badgeview:library:1.1.1'
+
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    //    compile 'com.nineoldandroids:library:2.4.0'
+
+    //    compile 'me.iwf.photopicker:PhotoPicker:0.9.5@aar'
+    compile('com.github.yalantis:ucrop:2.2.1') {
+        exclude group: 'com.android.support'
+    }
+    compile 'me.kareluo.ui:popmenu:1.1.0'
+    compile('com.github.gzu-liyujiang.AndroidPicker:WheelPicker:1.5.2') {
+        exclude group: 'com.android.support'
+    }
+    compile 'com.youth.banner:banner:1.4.9'
+//    compile "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+//    compile ("com.yanzhenjie:permission:$rootProject.permission")
+//    compile "zlc.season:rxdownload2:$rootProject.rxdownload2"
+//    compile "com.zhy:flowlayout-lib:$rootProject.flowlayout"
+//    compile "com.zhy:base-rvadapter:$rootProject.baservadapter"
+//    compile "com.zhy:base-adapter:$rootProject.baseadapter"
+//    compile "com.github.hackware1993:MagicIndicator:$rootProject.MagicIndicator"
+//    compile "com.baoyz.actionsheet:library:$rootProject.actionsheet"
+//    compile "me.zhanghai.android.materialratingbar:library:$rootProject.materialratingbar"
+//    compile "com.zzhoujay.richtext:richtext:$rootProject.richtext"
+//    compile "com.zzhoujay.glideimagegetter:glideimagegetter:$rootProject.glideimagegetter"
+//    compile "com.kyleduo.switchbutton:library:$rootProject.switchbutton"
+//    compile "com.afollestad.material-dialogs:core:$rootProject.materialdialogs"
+//
+//    compile "com.github.CymChad:BaseRecyclerViewAdapterHelper:$rootProject.BaseRecyclerViewAdapterHelper"
+//    compile "com.flyco.dialog:FlycoDialog_Lib:$rootProject.FlycoDialog"
+//    compile "com.github.medyo:fancybuttons:$rootProject.fancybuttons"
+//    compile "de.hdodenhof:circleimageview:$rootProject.circleimageview"
+////    compile 'in.srain.cube:ultra-ptr:$rootProject.materialdialogs"
+////    compile "com.yanyusong.y_divideritemdecoration:$rootProject.divideritemdecoration"
+//    compile 'com.yanyusong.y_divideritemdecoration:y_divideritemdecoration:2.0'
+//    compile "com.rengwuxian.materialedittext:library:$rootProject.materialedittext"
+//    compile "com.github.yalantis:ucrop:$rootProject.ucrop"
+//    compile "me.kareluo.ui:popmenu:$rootProject.popmenu"
+//    compile "com.github.gzu-liyujiang.AndroidPicker:WheelPicker:$rootProject.WheelPicker"
+//    compile "com.youth.banner:banner:$rootProject.banner"
+
+}
