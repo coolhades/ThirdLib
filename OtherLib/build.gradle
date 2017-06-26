@@ -41,6 +41,7 @@ dependencies {
     compile('com.zhy:flowlayout-lib:1.0.3') {
         exclude group: 'com.android.support'
     }
+    //bottom-navigation-bar
     compile('com.ashokvarma.android:bottom-navigation-bar:2.0.0') {
         exclude group: 'com.android.support'
     }
@@ -96,6 +97,10 @@ dependencies {
         exclude group: 'com.android.support'
     }
     compile 'com.youth.banner:banner:1.4.9'
+    //webView
+    compile 'com.just.agentweb:agentweb:1.2.1'
+
+
 //    compile "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
 //    compile ("com.yanzhenjie:permission:$rootProject.permission")
 //    compile "zlc.season:rxdownload2:$rootProject.rxdownload2"
