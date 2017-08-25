@@ -61,10 +61,6 @@ dependencies {
         exclude group: 'com.android.support'
     }
 
-    compile('com.zzhoujay.richtext:richtext:2.3.7') {
-        exclude group: 'com.android.support'
-    }
-    compile 'com.zzhoujay.glideimagegetter:glideimagegetter:1.0.1'
     compile('com.kyleduo.switchbutton:library:1.4.5') {
         exclude group: 'com.android.support'
     }
@@ -94,8 +90,6 @@ dependencies {
         exclude group: 'com.android.support'
     }
     compile 'com.youth.banner:banner:1.4.9'
-    //webView
-    compile 'com.just.agentweb:agentweb:1.2.1'
 
 
 //    compile "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
